@@ -1,0 +1,581 @@
+:root{
+    --purple: rgb(184, 44, 158);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-rows: repeat(6px , 250px);
+    grid-template-columns: auto;
+}
+h3, h4, h5{
+    color: rgba(79, 86, 101);
+}
+.parent{
+    display: flex;
+    flex-direction: column;
+    width: 94vw;
+    grid-row: 1 / 10;
+    grid-column: 1 / 10;
+}
+.head{
+    display: flex;
+    background-color: var(--purple);
+    color: white;
+    position: fixed;
+    width: 100%;
+    place-content: center;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+    height: 2.5rem;
+}
+.headtext{
+    color: white;
+}
+.headbutton{
+    background-color: white;
+    border: none;
+    padding: 8px 20px 8px 20px;
+    border-radius: 3rem;
+    color: var(--purple);
+    font: bolder;
+}
+.headtext:hover, button:hover{
+    cursor: pointer;
+}
+.head2button{
+    background-color: white;
+    border: 1px  var(--purple) solid;
+    border-radius: 3rem;
+    padding:  18px 35px 13px 35px;
+    width: 14vw;
+    color: var(--purple);
+    font: bolder;
+}   
+.prepare{
+    display: flex;
+    flex-direction: column;
+    margin: 3.8rem;
+    width: 100%;
+}
+.head2{
+    display: flex;
+    gap: 66%;
+    margin-bottom: 2.5rem;
+}
+.laptopsmiley{
+    height: 3.5rem;
+}
+.preparemain{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80vh;
+}
+.preparetext{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    font-size: 1.8rem;
+    font: lighter;
+    width: 40%;
+    place-content: center;
+    height: 65vh;
+    margin-top: 3%;
+    margin-right: 4rem;
+}
+.preparetexth4{
+    font-size: large;
+}
+.img1{
+    width: 50%;
+}
+.boy{
+    width: 95%;
+    height: 95%;
+    border-radius: 1.5rem;
+}
+.preparebutton{
+    background-color: var(--purple);
+    border: none;
+    color: white;
+    padding: 1rem 32px;
+    border-radius: 11px;
+    width: 12rem;
+    font: bolder;
+}
+.trio{
+    background-color: white;
+    display: flex;
+    place-content: center;
+    gap: 10%;
+    font-size: 1.5rem;
+    padding: 3rem;
+}
+.trioicon{
+    color: var(--purple);
+    background-color: rgb(184, 44, 158, 0.3);
+    padding: 11px;
+    border-radius: 50%;
+}
+.encourage{
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    width: 100%;
+    margin: 3.8rem;
+    height: 62vh;
+}
+.img2{
+    margin-right: 4rem;
+    width: 50%;
+}
+.encouragealltext{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    font-size: 1.8rem;
+    font: lighter;
+    width: 50%;
+    place-content: center;
+    height: 65vh;
+}
+.encouragetext{
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;  
+}
+.encourageh5{
+    font-size: large;
+    width: 90%;
+}
+.boylearning{
+    width: 95%;
+    height: 95%;
+    border-radius: 1.5rem;
+}
+.encouragelist{
+    display: flex;
+    gap: 20px;
+    font-size: large;
+    color: rgb(62, 70, 87);
+    font: bolder;
+}
+.encouragelist1{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+}
+.encouragelist2{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+}
+.encheck{
+    color: white;
+    background-color: var(--purple);
+    border-radius: 50%;
+    padding: 2px;
+    margin-right: 4px;
+}
+.curriculum{
+    display: flex;
+    flex-direction: column;
+}
+.currh2{
+    font-size: 2.3rem;
+}
+.curriculumtext{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25rem;
+    gap: 1.8rem;
+    width: 52%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.tabs{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    margin-left: 4.5rem;
+    margin-bottom: 5rem;
+}
+.tab{
+    border: rgb(210, 210, 210) 2px solid;
+    padding: 4rem 6rem 2rem 6rem;
+    height: 80vh;
+    border-radius: 5px;
+    text-align: center;
+}
+.rocket, .robot, .card{
+    height: 8rem;
+    margin-bottom: 3.4rem;
+}
+.tabalign{
+    display: inline-flex;
+    gap: 4px;
+    margin-bottom: 4rem;
+    place-self: center;
+}
+.tablink{
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    margin-bottom: 40px;
+    text-align: left;
+    color: rgba(79, 86, 101);
+}
+.tabcheck{
+    color: black;
+}
+.currblack{
+    color: black;
+}
+.tabpics{
+    display: flex;
+    flex-direction: column;
+}
+.pricing{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--purple);
+    gap: 1rem;
+    width: 105%;
+    height: 27vw;
+    place-content: center;
+    margin-bottom: 15rem;
+}
+.pricetext{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    margin-top: 14rem;
+    text-align: center;
+    gap: 10px;
+    font-size: 2rem;
+}
+.pricetexth3{
+    color: white;
+    font-size: 1.5rem;
+}
+.pricetabs{
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    margin-left: 16rem;
+}
+.pricetab{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 35%;
+    height: 52vh;
+    border-radius: 5px;
+    box-shadow: 2px 1px 8px rgb(167, 165, 165);
+}
+.pricesession{
+    background-color: rgb(224, 231, 255);
+    color: blue;
+    border-radius: 10px;
+    width: 7rem;
+    font-size: 9px;
+    padding: 6px 11px 5px 11px;
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+.groupsession{
+    width: 6rem;
+}
+.pricealign{
+    display: inline-flex;
+    gap: 4px;
+    font-size: 1.5rem;
+    place-self: center;
+    margin-bottom: 18px;
+}
+.sessionprice{
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+.pricetabtext{
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    gap: 10px;
+    color: rgb(83, 83, 83);
+    background-color: rgb(249, 250, 251);
+    height: 100%;
+    padding: 1rem 0 1rem 2rem;
+}
+.pricebuttonadjust{
+    margin-top: 1.8rem;
+}
+.pricecheck{
+    color: green;
+}
+.pricelink{
+    display: flex;
+    gap: 8px;
+}
+.pricebutton{
+    width: 90%;
+    background-color: var(--purple);
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    padding: 12px 0 12px 0;
+    border-radius: 10px;
+}
+.fourpoints{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: rgb(249, 250, 251);
+    width: 105%;
+    padding: 5rem 3rem;
+    height: 60vh;
+}
+.firsttwo{
+    display: flex;
+    gap: 1rem;
+}
+.lasttwo{
+    display: flex;
+    gap: 1rem;
+}
+.program{
+    background-color: orange;
+}
+.laptop{
+    background-color: red;
+}
+.prob{
+    background-color: rgb(105, 105, 234);
+}
+.tech{
+    background-color: rgb(152, 98, 152);
+}
+.program, .tech, .laptop, .prob{
+    height: 6rem;
+    padding: 1.2rem;
+    border-radius: 50%;
+    border: none;
+    margin-bottom: 10px;
+}
+.pointstext{
+    color: black;
+    margin-bottom: 1rem;
+}
+.programming, .techconcept, .prosolving, .crithink{
+    width: 60%;
+    height: 100%;
+}
+.join{
+    display: flex;
+    flex-direction: row;
+    width: 105%;
+    height: 80vh;
+    background-color: rgb(249, 250, 251);
+    padding-top: 6rem;
+}
+.jointext{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    font-size: 1.8rem;
+    font: lighter;
+    width: 40%;
+    height: 65vh;
+    margin-left: 5rem;
+}
+.joinh4{
+    font-size: large;
+}
+.img3{
+    width: 50%;
+    height: 100%;
+    margin-left: 3rem;
+}
+.learners{
+    width: 90%;
+    height: 90%;
+    border-radius: 1.5rem;
+}
+.joinbutton{
+    background-color: var(--purple);
+    color: white;
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+.rating{
+    display: flex;
+    flex-direction: column;
+    padding-top: 6rem;
+    width: 100%;
+}
+.ratingtext{
+    text-align: center;
+    width: 35vw;
+    margin-left: 27rem;
+    padding-bottom: 6rem;
+}
+.ratingh2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.signup{
+    display: flex;
+    gap: 3rem;
+    font-size: 1.5rem;
+    width: 70%;
+    height: 25vh;
+    background-color: white;
+    border-radius: 10px;
+    margin: 1rem auto;
+}
+.ratingbutton{
+    width: 20vw;
+    background-color: var(--purple);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    padding: 1rem 0.8rem;
+    margin-bottom: 3rem;
+    border-radius: 10px;
+}
+.contact{
+    display: flex;
+    margin: 1rem auto;
+    width: 105%;
+    height: 65vh;
+    background-color: rgb(249, 250, 251);
+    gap: 0;
+    padding-top: 5rem;
+}
+.contactpic{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.firstabout{
+    margin-left: 11.5rem;
+}
+.contacticon{
+    color: var(--purple);
+    margin-right: 30px;
+    background-color: white;
+    padding: 0.6rem;
+    border-radius: 50%;
+}
+.ktc{
+    width: 50%;
+    height: 3rem;
+}
+.restabout{
+    display: flex;
+    width: 70%;
+    gap: 10rem;
+}
+.contactlinks{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.reachus{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.resticon{
+    color: var(--purple);
+}
+.contactalign{
+    display: flex;
+    gap: 12px;
+}
+.resth3{
+    color: black;
+}
+.linkh3{
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+.foot{
+    display: flex;
+    background-color: var(--purple);
+    width: 105%;
+    gap: 48rem;
+    padding: 10px;
+    align-items: center;
+    height: 8vh;
+}
+.KTC{
+    margin-left: 3.7rem;
+}
+.policyterms{
+    display: flex;
+    gap: 20px;
+}
+.footktc{
+    color: white;
+    font-size: 1rem;
+}
+.emailreg{
+    grid-row: 8 / 9;
+    grid-column: 5 / 6;
+    display: flex;
+    background-color: white;
+    position: relative;
+    flex-direction: column;
+    height: 30vh;
+    width: 40vw;
+    gap: 20px;
+    place-content: center;
+    margin: 1rem auto;
+    margin-top: 55rem;
+    border-radius: 9px;
+    padding: 1rem;
+    box-shadow: 1px 1px 1px black;
+}
+.exit{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 8px;
+    cursor: pointer;
+}
+.email{
+    background-color: rgb(247, 250, 252);
+    padding: 15px 8px;
+    border: none;
+    border-radius: 8px;
+}
+.subscribe{
+    width: 100%;
+    background-color: var(--purple);
+    color: white;
+    border: none;
+    height: 3rem;
+    padding: 12px 0 12px 0;
+    border-radius: 10px;
+}
+.mail{
+    color: black;
+}
+.hideemailreg{
+    display: none;
+}
